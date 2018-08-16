@@ -1,12 +1,12 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'Shopping Coin' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
+// Deployed to : 0x462c1536D5f6b3Da1411A9dBa9FdD8D7Cf48AcCC
+// Symbol      : shop
+// Name        : Shopping Coin
+// Total supply: 5000000000
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract Shopping Coin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+    function ShoppingCoin() public {
+        symbol = "shop";
+        name = "Shopping Coin";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        _totalSupply = 5000000000;
+        balances[0x462c1536D5f6b3Da1411A9dBa9FdD8D7Cf48AcCC] = _totalSupply;
+        Transfer(address(0), 0x462c1536D5f6b3Da1411A9dBa9FdD8D7Cf48AcCC, _totalSupply);
     }
 
 
